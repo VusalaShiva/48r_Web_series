@@ -57,6 +57,18 @@
     a img {
       width: 120px;
     }
+
+    audio {
+      display: block;
+      margin: 10px auto;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-weight: bold;
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -73,22 +85,41 @@
     <a href="vidioes/trailer.mp4" download="trailer">
       <img src="./images/download_icon.png" alt="Download Trailer">
     </a>
+    <center>
+      <audio controls>
+        <source src="./songs/tariler_audio.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      <a href="./songs/tariler_audio.m4a" download="trailer_audio">
+        Download Trailer Audio
+      </a>
+    </center>
   </details>
+
   <h1>Video Song</h1>
-    <details>
-    <summary>Kaatuka Kannuladha Full Video Song | Telugu Medium |</summary>
-    <video controls width="400" >
-        <source src="./song.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+  <details>
+    <summary>Kaatuka Kannuladha Full Video Song | Telugu Medium</summary>
+    <video controls width="400">
+      <source src="./song.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
     <a href="./song.mp4" download="TeluguMedium_TitleSong">
-        <img src="./images/download_icon.png" alt="Download Title Song" width="120">
+      <img src="./images/download_icon.png" alt="Download Title Song">
     </a>
-    </details>
-
+    <center>
+      <audio controls>
+        <source src="./songs/video_song.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      <a href="./songs/video_song.m4a" download="title_song_audio">
+        Download Title Song Audio
+      </a>
+    </center>
+  </details>
 
   <h1>Episodes</h1>
-
   <div class="episode-links">
     <a href="#Episode1">Episode 1</a>
     <a href="#Episode2">Episode 2</a>
@@ -196,8 +227,9 @@
       <img src="./images/download_icon.png" alt="Download Episode 8">
     </a>
   </details>
+
+  <div class="footer">
+    © VUSALA SHIVA KUMAR
+  </div>
 </body>
-<center>
-    @ VUSALA SHIVA KUMAR
-</center>
 </html>
